@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+    background: #fff;
+    word-spacing: 0.4vh;
+}
+body p:last-child {
+    margin-bottom: 5vh
+}
+
+h1 {
+    font-family: Roboto;
+    color: white;
+    font-size:4vh;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: 20%;
+    background-position: 40%;
+    font-family: satisfy;
+    font-size: 2vh;
+    color: white;
+    font-style: italic;
+}
+
+p {
+    margin-right: 9vh;
+    margin-left: 9vh;
+    font-family: IBM Plex Mono;
+    font-size: 1.2vh;
+    text-align: justify;
+}
+
+/* showing the wrong part of the image at the moment compared to the example */
+header {
+    background-image: url(/img/huntington.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: auto;
+    text-align: center;
+    vertical-align: center;
+}
+
+header h1{
+    padding-top: 10vh;
+}
+
+/* font weight doesn't seem to be working to enable me to bold the headers, need to come back to this */
+h3 {
+    font-family: Roboto;
+    font-size: 1.5vh;
+    color: black;
+    word-spacing: normal;
+    margin-left: 9vh;
+    /* font-weight: bolder; */
+}
+
+#zen-participation, #zen-benefits {
+    background-image: url(/img/bamboo.png);
+    background-color: rgba(10, 105, 49, 0.726);
+    background-repeat: repeat, repeat, no-repeat;
+    color: white;
+}
+
+.participation h3 {
+    margin-bottom: 0;
+}
+
+.participation p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.participation p:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.benefits h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1vh;
+}
+
+.benefits p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom:1vh;
+}
+
+[role=contentinfo] :link {
+    font-family: Satisfy;
+    font-size: 4vh;
+    color: white;
+}
+
+[role=contentinfo] {
+    background-color: rgba(10, 105, 49, 0.726);
+    font-family: Roboto;
+    font-size: 2vh;
+    text-align: center;
+    color: rgb(180, 176, 176);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+[role=contentinfo]:link {
+    font-family: Satisfy;
+    color: white;
+}
