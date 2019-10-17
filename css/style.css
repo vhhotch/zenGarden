@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
+
+
 body {
     background: #fff;
     word-spacing: 0.4vh;
@@ -19,6 +21,7 @@ h1 {
     text-transform: uppercase;
 }
 
+/* This is the best I could do to get the wierd circle to position close-ish to the text */
 h2 {
     background: url(../img/zen.svg);
     background-repeat: no-repeat;
@@ -34,6 +37,7 @@ h2 {
 p {
     margin-right: 9vh;
     margin-left: 9vh;
+    margin-top: 1vh;
     font-family: IBM Plex Mono;
     font-size: 1.2vh;
     text-align: justify;
@@ -70,7 +74,18 @@ h3 {
     color: black;
     word-spacing: normal;
     margin-left: 9vh;
-    /* font-weight: bolder; */
+}
+
+.summary {
+    margin-top: 2vh;
+}
+.summary a{
+    color: black;
+}
+
+.summary p {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 #zen-participation, #zen-benefits {
@@ -87,10 +102,21 @@ h3 {
 .participation p {
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 .participation a {
-    color: white;
+    color: black;
+}
+
+/* trying to remove dotted line under the css references - remove dots but now it doesn't expaand */
+abbr {
+    text-decoration: none;
+    outline: none;
+}
+
+[title= "Cascading Style Sheets, levels 1 and 2"] {
+    text-decoration: none;
 }
 
 .participation p:last-child {
@@ -134,6 +160,14 @@ h3 {
     padding-bottom: 3vh;
 }
 
+.requirements a{
+    color: black;
+}
+
+.requirements a:hover{
+    text-decoration: underline;
+}
+
 .requirements p:last-child {
     margin-bottom: 0;
 }
@@ -175,5 +209,76 @@ footer a{
 
 footer a:hover {
     color: grey;
+    text-decoration: none;
 }
 
+.sidebar {
+    background-color: rgb(203, 233, 203);
+    font-family: roboto;
+}
+
+.sidebar li{
+    color: black;
+}
+
+.design-selection li{
+    float: left;
+    width: 50%;
+    color: black;
+    font-size: 1.5vh;
+}
+
+.design-selection ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.select {
+    visibility: hidden;
+}
+
+.design-name {
+    color: black;
+}
+
+.designer-name {
+    color: grey;
+}
+
+.design-selection li {
+    list-style: none;
+    color: black
+}
+
+.zen-resources {
+    background-image: url(/img/bamboo.png);
+    background-color: rgba(10, 105, 49, 0.726);
+    column-count: 2;
+    font-family: IBM Plex Mono;
+    font-size: 1.5vh;
+    padding: 2vh;
+}
+
+.resources {
+    visibility: hidden;
+}
+
+.zen-resources li {
+  list-style: none;
+  color: darkgreen;
+}
+
+.zen-resources a{
+    color: rgb(53, 83, 53);
+}
+
+*{
+    margin:0;
+} 
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
