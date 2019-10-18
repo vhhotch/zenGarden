@@ -76,6 +76,11 @@ h3 {
     margin-left: 9vh;
 }
 
+/* Trying to attempt to change the background colour of the hover by targeting the link title. It IS dark grey in DarkMode on the Mac!! */
+/* [title="This page's source HTML code, not to be modified."]  {
+    background-color: rgb(73, 72, 72);
+} */
+
 .summary {
     margin-top: 2vh;
 }
@@ -113,10 +118,6 @@ h3 {
 abbr {
     text-decoration: none;
     outline: none;
-}
-
-[title= "Cascading Style Sheets, levels 1 and 2"] {
-    text-decoration: none;
 }
 
 .participation p:last-child {
@@ -191,6 +192,10 @@ abbr {
     color: white;
 }
 
+[role="contentinfo"] {
+    margin-top: 5vh;
+}
+
 footer {
     background-color: rgba(9, 63, 41, 0.822);
     padding-top: 2vh;
@@ -199,7 +204,6 @@ footer {
     font-size: 3vh;
     word-spacing: 5vh;
     margin-top:0;
-
 }
 
 footer a{
@@ -215,6 +219,7 @@ footer a:hover {
 .sidebar {
     background-color: rgb(203, 233, 203);
     font-family: roboto;
+    font-size: 1.5vh;
 }
 
 .sidebar li{
@@ -226,6 +231,11 @@ footer a:hover {
     width: 50%;
     color: black;
     font-size: 1.5vh;
+    text-align: center;
+}
+
+.design-selection ul {
+    padding-left: 0;
 }
 
 .design-selection ul::after {
@@ -255,13 +265,34 @@ footer a:hover {
     background-image: url(/img/bamboo.png);
     background-color: rgba(10, 105, 49, 0.726);
     column-count: 2;
+    text-align: center;
     font-family: IBM Plex Mono;
     font-size: 1.5vh;
     padding: 2vh;
 }
 
+.design-archives {
+    column-count: 2;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.design-archives li {
+    list-style: none;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.design-archives a {
+    color: grey;
+}
+
 .resources {
-    visibility: hidden;
+    display: none;
+}
+
+.archives {
+    display: none;
 }
 
 .zen-resources li {
@@ -277,8 +308,11 @@ footer a:hover {
     margin:0;
 } 
 
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
+.design-selection li  {
+    border-bottom-color:rgb(158, 156, 156);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin: 0 auto;
+}
